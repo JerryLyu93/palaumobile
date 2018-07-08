@@ -2,6 +2,8 @@ var ua = navigator.userAgent.toLocaleLowerCase()
 var isMobile = /Mobile|iP(hone|od|ad)|Android|BlackBerry|IEMobile|Kindle|NetFront|Silk-Accelerated|(hpw|web)OS|Fennec|Minimo|Opera M(obi|ini)|Blazer|Dolfin|Dolphin|Skyfire|Zune/i.test(ua)
 
 if (isMobile) {
+  $('body').css('width', window.innerWidth + 'px').css('overflow', 'hidden')
+
   var width = window.innerWidth - 30
   $('#google-map').attr('width', width)
     .attr('height', width)
