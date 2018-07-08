@@ -5,45 +5,116 @@
   padding: 0;
 }
 
-.header-logo {
-  position: absolute;
-  left: 0;
-  top: 50%;
-  transform: translateY(-50%);
-  
+.header-logo img {
+  height: 84px;
+  width: 154px;
+  margin: 20px;
 }
 
-.header-logo img {
-  margin: 0;
-  height: 94px;
-  width: 182px;
+.nav.nav-pills.nav-pills-tertiary {
+  display: none;
+  margin-top: 12px;
 }
 
 #navSecondary {
   background-color: #fff;
-  padding: 27px 0;
+  padding: 10px 0;
 }
 
-.price-table tr{
-  background-color: #fff
+.price-table tr {
+  background-color: #fff;
 }
+
 .bandwidth td {
-  color: #006994
+  color: #006994;
 }
 
-.price-table td:first-child {
-  font-weight: 600
+.price-table-1 td:first-child {
+  font-weight: 600;
 }
 
-.price-table.table > tbody > tr > td {
-  padding-right: 0
+.price-table-1.table > tbody > tr > td {
+  padding-right: 0;
 }
 
-#google-map {
-  width: 400px;
-  height: 400px;
+.price-table-1 {
+  display: none
 }
 
-.nav.nav-pills.nav-pills-tertiary {
-  text-align: right
+.about-us-p {
+  padding: 0 20px
+}
+
+#footer {
+  background: #1d7fbe;
+  border-color: #1d7fbe
+}
+#footer p {
+  color: #fff
+}
+#footer .footer-copyright {
+  background: #1d7fbe;
+  border-color: #1d7fbe;
+  color: #f3f3f3
+}
+#footer .footer-copyright p {
+  color: #f3f3f3
+}
+
+#revolutionSlider .tp-caption {
+  display: none
+}
+
+.mobile-slogen {
+  position: absolute;
+  z-index: 100;
+  bottom: 10px;
+  left: 20px;
+}
+.mobile-slogen h1, .mobile-slogen h4{
+  margin-bottom: 10px;
+  font-weight: 800;
+  color: #fff;
+  letter-spacing: 1px;
+}
+.mobile-slogen h4 {
+  font-weight: 500;
+}
+@media (min-width: 992px) {
+  .price-table-1 {
+    display: block
+  }
+
+  .price-table-2 {
+    display: none
+  }
+
+  .price-table-2 tr:first-child td {
+    font-weight: 600
+  }
+
+  .nav.nav-pills.nav-pills-tertiary {
+    text-align: right;
+  }
+  .copyright-p {
+    text-align: right;
+  }
+
+  .header-logo img {
+    margin: 0;
+    height: 62px;
+    width: 124px;
+  }
+
+  .nav.nav-pills.nav-pills-tertiary {
+    display: block;
+  }
+
+  #revolutionSlider .tp-caption {
+    display: block
+  }
+
+  .mobile-slogen {
+    display: none
+  }
 }
